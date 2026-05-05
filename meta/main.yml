@@ -1,0 +1,23 @@
+# meta file
+---
+galaxy_info:
+  author: oefenweb
+  role_name: signal
+  company: Oefenweb.nl B.V.
+  description: Set up Signal in Debian-like systems
+  license: MIT
+  min_ansible_version: 2.10.0
+  platforms:
+    - name: Ubuntu
+      versions:
+        - jammy
+        - noble
+    - name: Debian
+      versions:
+        - bookworm
+        - trixie
+  galaxy_tags:
+    - development
+    - system
+    - networking
+dependencies: []

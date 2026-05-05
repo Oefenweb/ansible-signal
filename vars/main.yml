@@ -1,0 +1,17 @@
+# vars file
+---
+signal_keyring_src: https://updates.signal.org/desktop/apt/keys.asc
+signal_keyring_dst: /usr/share/keyrings/signal-desktop-keyring.gpg
+signal_repositories:
+  - type: "deb [arch=amd64 signed-by={{ signal_keyring_dst }}]"
+    url: "https://updates.signal.org/desktop/apt xenial"
+    component: main
+
+signal_dependencies_pre:
+  - software-properties-common
+  - dirmngr
+  - apt-transport-https
+  - wget
+
+signal_dependencies:
+  - signal-desktop

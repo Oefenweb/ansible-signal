@@ -1,0 +1,8 @@
+# tasks file
+---
+- name: install | dependencies
+  ansible.builtin.apt:
+    name: "{{ signal_dependencies }}"
+    state: "{{ apt_install_state | default('latest') }}"
+  tags:
+    - signal-install-dependencies
