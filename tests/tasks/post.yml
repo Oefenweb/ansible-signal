@@ -2,5 +2,5 @@
 ---
 - name: test installation
   ansible.builtin.command: >
-    signal --version
+    which signal-desktop
   changed_when: false
