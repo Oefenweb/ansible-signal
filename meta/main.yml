@@ -10,14 +10,12 @@ galaxy_info:
   platforms:
     - name: Ubuntu
       versions:
-        - bionic
-        - focal
         - jammy
         - noble
     - name: Debian
       versions:
-        - bullseye
         - bookworm
+        - trixie
   galaxy_tags:
     - development
     - system
